@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
-
-
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -13,13 +11,16 @@ nav.navbar {
     padding: 30px 0;
 }
 
+a.navbar-brand {
+    padding-left: 80px;
+}
+
 a.navbar-brand img {
     width: auto;
 }
 
 .fancy-wallpaper {
-    outline: 1px solid brown;
-
+    /* outline: 1px solid brown; */
     padding: 160px 0px;
     background-image: url(../assets/images/taxi.jpg);
     background-size: cover;
@@ -30,8 +31,7 @@ a.navbar-brand img {
 }
 
 .fancy-box {
-    outline: 1px solid red;
-
+    /* outline: 1px solid red; */
     background-color: #F7B617;
     margin-left: auto;
     width: fit-content;
@@ -63,18 +63,16 @@ a.navbar-brand img {
 
 .fancy-line-divider {
     padding: 0 !important;
-
     margin: 0rem 0 1.5rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .fancy-line-divider div {
     padding: 0 !important;
 }
-
 
 .fancy-line-divider .fancy-icon-star {
     color: #fff;
@@ -104,18 +102,100 @@ a.navbar-brand img {
     margin-left: 1rem;
 }
 
+.col-md-12 {
+    background: #F7B617;
+}
+
+
+.fancy-section-2 {
+    padding: 40px 0;
+}
+
+.fancy-img {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.fancy-img img {
+    padding: 40px 0;
+}
+
+.fancy-section {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.fancy-section label {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.fancy-section p {
+    width: 60%;
+    font-size: 23px;
+    color: #fff;
+}
+
+.fancy-wallpaper-2 {
+    padding: 200px 0px;
+    background-image: url(../assets/images/conduce.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.fancy-drive {
+    color: #fff;
+    position:absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.fancy-drive label {
+    margin-top: 80px;
+    font-size: 28px;
+}
+
+.fancy-drive p {
+    font-size: 22px;
+}
+
+.fancy-drive button {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 14px;
+    background: #F7B617;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0;
+    outline: none;
+    font-size: 18px;
+}
 
 @media (max-width: 991px) {
+    a.navbar-brand {
+        display: flex;
+        margin-right: auto;
+        padding-left: 30px;
+    }
     .fancy-box h2 {
         font-weight: 600;
         font-size: 30px;
     }
-    
     .fancy-box h3 {
         margin-top: 30px;
         font-weight: 600;
     }
-
     .fancy-box button {
         border-radius: 5px;
         border: none;
@@ -126,34 +206,80 @@ a.navbar-brand img {
         font-size: 15px;
         outline: none;
     }
+    .fancy-img {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+    .fancy-img img {
+        padding: 40px 0;
+        width: inherit;
+    }
+    .fancy-section {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .fancy-section label {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 45px;
+    }
+    .fancy-section p {
+        width: 100%;
+        font-size: 20px;
+    }
 }
-
 
 @media (max-width: 768px) {
     .spacer {
         flex: none;
     }
-    
     nav.navbar {
         padding: 10px;
     }
-
     button.navbar-toggler {
         outline: none;
     }
-    
     a.navbar-brand img {
         width: auto;
-        display: none;
+        /* display: none; */
     }
-
-
     .fancy-box-mobile {
         visibility: hidden;
     }
-
     .fancy-box button {
         padding: 8px 14px;
         font-size: 18px;
+    }
+    .fancy-box h3 {
+        font-size: 39px;
+    }
+
+
+    .fancy-section-2 {
+        padding: 40px 20px 0 20px;
+    }
+
+    .fancy-img-2 {
+        border: 1px solid #fff;
+        text-align: center;
+    }
+
+    .fancy-img-2 img {
+        padding: 40px 0;
+        width: 300px;
+    }
+
+    .fancy-section {
+        border: none;
+        padding: 0;
+    }
+
+    .fancy-section label {
+        font-size: 20px;
+        color: #fff;
+        border: none;
     }
 }
