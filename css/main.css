@@ -106,7 +106,6 @@ a.navbar-brand img {
     background: #F7B617;
 }
 
-
 .fancy-section-2 {
     padding: 40px 0;
 }
@@ -153,12 +152,12 @@ a.navbar-brand img {
 
 .fancy-drive {
     color: #fff;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     right: 0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .fancy-drive label {
@@ -180,6 +179,132 @@ a.navbar-brand img {
     margin: 20px 0;
     outline: none;
     font-size: 18px;
+}
+
+.fancy-section-tarifas {
+    outline: 1px solid brown;
+    padding: 50px 0 20px 0;
+    background: #F7B617;
+}
+
+.fancy-section-tarifas label {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 65px;
+}
+
+.fancy-section-tarifas p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.fancy-section-tarifas div {
+    padding-bottom: 25px;
+}
+
+.fancy-section-tarifas div input {
+    width: 55%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 8px;
+    background: #F7B617;
+    caret-color: #fff;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.fancy-section-tarifas div input::placeholder {
+    color: #fff;
+}
+
+.fancy-section-tarifas div button {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 14px;
+    background: #fff;
+    font-weight: 600;
+    margin: 20px 0;
+    outline: none;
+    font-size: 18px;
+}
+
+iframe {
+    padding: 10px !important;
+    border: 1px solid #fff !important;
+    width: 550px;
+    height: 500px;
+}
+
+/* Styles for footer */
+
+.fancy-footer {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+[alt="logoBlanco"] {
+    padding-left: 6.5rem;
+    width: 15rem;
+    margin-top: 1.5rem
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin-left: 6.5rem;
+}
+
+.fancy-list ul {
+    padding: 0;
+}
+
+.fancy-list ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.fancy-list ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fancy-icon-white {
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-top: auto;
+}
+
+.fancy-icon-white i {
+    padding-right: 1rem;
+}
+
+.fancy-icon-black {
+    margin-top: auto;
+}
+
+.fancy-icon-black img {
+    display: inline-block;
+    /* width: 15.5rem;
+        height: 5.4rem; */
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+
+.footer-span span {
+    margin-left: 6.5rem;
+}
+
+@media (max-width: 1149px) {
+    iframe {
+        width: 450px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -230,6 +355,48 @@ a.navbar-brand img {
         width: 100%;
         font-size: 20px;
     }
+    .fancy-section-tarifas div input {
+        width: 80%;
+    }
+    iframe {
+        width: 350px;
+        height: 300px;
+    }
+
+    /* Styles for footer */
+    .container-col {
+        position: relative;
+        /* left: 4%; */
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    [alt="logoBlanco"] {
+        padding-left: 0rem;
+        width: 8rem;
+        margin-top: 1.5rem;
+    }
+    hr {
+        margin-left: 0rem;
+    }
+    .fancy-list {
+        margin-right: 0rem;
+    }
+    .fancy-icon-white {
+        display: inline-block;
+        margin-bottom: 3rem;
+        margin-top: 0rem;
+    }
+    .fancy-icon-black {
+        margin-top: 0rem;
+    }
+    .fancy-icon-black img {
+        display: block;
+        /* width: 18rem;
+        height: 5.4rem; */
+        margin-bottom: 2rem;
+        margin-left: 0rem;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -256,30 +423,42 @@ a.navbar-brand img {
     .fancy-box h3 {
         font-size: 39px;
     }
-
-
     .fancy-section-2 {
         padding: 40px 20px 0 20px;
     }
-
     .fancy-img-2 {
         border: 1px solid #fff;
         text-align: center;
     }
-
+    .fancy-img-2 p {
+        font-size: 28px;
+        color: #fff;
+        font-weight: 600;
+    }
     .fancy-img-2 img {
-        padding: 40px 0;
+        padding: 0px 0px 40px;
         width: 300px;
     }
-
     .fancy-section {
         border: none;
         padding: 0;
     }
-
     .fancy-section label {
         font-size: 20px;
         color: #fff;
         border: none;
+    }
+    .fancy-section-tarifas div input {
+        width: 80%;
+    }
+    .fancy-btn {
+        text-align: center;
+    }
+    iframe {
+        width: 450px;
+        height: 400px;
+    }
+    .footer-span span {
+        margin-left: 0;
     }
 }
